@@ -1,4 +1,4 @@
 // Code your solution in this file!
 function logDriverNames (array) {
-  console.log(array.forEach(function (element) {return element.name;}));
+  array.forEach(function (element) {console.log(element.name);});
 }
