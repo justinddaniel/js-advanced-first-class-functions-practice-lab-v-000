@@ -4,5 +4,5 @@ function logDriverNames (array) {
 }
 
 function logDriversByHometown (array, string) {
-  array.forEach(function (element) {element.hometown === string ? console.log(element.hometown) : console.log('no match'); });
+  array.forEach(function (element) {element.hometown === string ? console.log(element.name) : console.log('no match'); });
 }
