@@ -14,3 +14,9 @@ function driversByRevenue (array) {
   return element1.revenue - element2.revenue; };
   return newarray.sort(revenueSorter);
 }
+
+function driversByName (array) {
+  let newarray = [];
+  array.forEach(function (element) { newarray.push(element.name);});
+  return newarray.sort();
+}
