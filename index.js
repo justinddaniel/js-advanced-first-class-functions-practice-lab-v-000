@@ -30,3 +30,8 @@ function totalRevenue (array) {
     return agg + e1.revenue;};
   return newarray.reduce(reduceRevenue, 0);
 }
+
+function averageRevenue (array) {
+  let total = totalRevenue(array);
+  return total/array.length;
+}
