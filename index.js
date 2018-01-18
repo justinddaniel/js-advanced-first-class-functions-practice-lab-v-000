@@ -22,3 +22,11 @@ function driversByName (array) {
     return element1.name.localeCompare(element2.name);};
   return newarray.sort(namesSorter);
 }
+
+function totalRevenue (array) {
+  let newarray = [];
+  array.forEach(function (element) { newarray.push(element);});
+  const reduceRevenue = function (agg, e1, i, arr) {
+    return agg + e1.revenue;
+  }
+}
