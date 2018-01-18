@@ -27,6 +27,6 @@ function totalRevenue (array) {
   let newarray = [];
   array.forEach(function (element) { newarray.push(element);});
   const reduceRevenue = function (agg, e1, i, arr) {
-    return agg + e1.revenue;
-  }
+    return agg + e1.revenue;};
+  return array.reduce(reduceRevenue, 0);
 }
