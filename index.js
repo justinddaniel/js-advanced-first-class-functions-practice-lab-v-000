@@ -8,7 +8,8 @@ function logDriversByHometown (array, string) {
 }
 
 function driversByRevenue (array) {
-  let newarray = array;
+  let newarray = [];
+  array.forEach(function (element) { newarray.push(element);});
   const revenueSorter = function (element1, element2) {
   return element1.revenue - element2.revenue; };
   return newarray.sort(revenueSorter);
