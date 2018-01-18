@@ -6,3 +6,10 @@ function logDriverNames (array) {
 function logDriversByHometown (array, string) {
   array.forEach(function (element) {element.hometown === string ? console.log(element.name) : console.log('no match'); });
 }
+
+function driversByRevenue (array) {
+  const revenueSorter = function (element1, element2) {
+  return element1.revenue - element2.revenue; };
+  let newarray = array.sort(revenueSorter);
+  return newarray;
+}
