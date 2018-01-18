@@ -19,6 +19,6 @@ function driversByName (array) {
   let newarray = [];
   array.forEach(function (element) { newarray.push(element);});
   const namesSorter = function (element1, element2) {
-    return element1.name.localCompare(element2);};
+    return element1.name.localeCompare(element2.name);};
   return newarray.sort(namesSorter);
 }
